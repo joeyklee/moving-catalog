@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>For Sale!</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Rokkitt" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="headerContainer" class="col-xs-12 col-md-12 col-lg-12 text-center">
+                <h1 id="title" class="topheader">We're Moving!</h1>
+                <h4 id="subtitle" class="topheader">...and our stuff is for sale.</h4>
+            </div>
+        </div>
+    </div>
+    <script id="mainContent" type="text/x-handlebars-template">
+        <div class="container purchaseitems">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    {{#each items}}
+                    {{#if this.available}}
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <div class="card">
+                            <!-- <img class="card-img-top" src={{img}} alt="Card image cap"> -->
+                            <img class="card-img-top img-responsive" src={{img}} alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title text-left">{{item}} | ${{cost}}</h4>
+                                <p class="card-text">
+                                    condition: {{condition}}
+                                    <br> comments: {{comments}}
+                                </p>
+                                <button href="#" class="mybtn buy">Request to Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+    <div id="myform">
+    	<button class="mybtn">X</button>
+    	<!-- !!!!!!!!!REPLACE ME!!!!!!!!! -->
+    	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfe280fhfeD6f5pWLZnISTWzpnXjHvuMFgHgPO91K382uDTng/viewform?embedded=true" width="100%" height="300px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    	<!-- !!!!!!!!!REPLACE ME!!!!!!!!! -->
+    </div>
+
+
+    <script type="text/javascript" src="main.js"></script>
+
+
+</body>
+
+</html>
+
+<!-- <script id="header" type="text/x-handlebars-template">
+   <div class="col-md-12">
+   <h1>{{headerTitle}}</h1>
+   <p>Today is {{weekDay}}</p>
+   </div>
+</script> -->
+<!-- <div class="card">
+                <div class="card-image">
+                    <img src={{img}}>
+                    <span class="card-title">{{item}}</span>
+                </div>
+                <div class="card-content">
+                    <p>{{cost}}</p>
+                    <p>{{condition}}</p>
+                    <p>{{comments}}</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div> -->

@@ -1,0 +1,83 @@
+#headerContainer {
+    margin-top: 50px;
+    border-color: #000;
+    border-style: solid;
+    border-radius: 2;
+}
+
+#title {
+    font-size: 76px;
+}
+
+#subtitle {
+    font-size: 48px;
+}
+
+.topheader {
+    font-family: 'Bungee Shade', cursive;
+}
+
+html{
+	position: relative;
+  min-height: 100%;
+}
+body {
+    background: #f8bbd0;
+    margin-bottom: 350px;
+}
+
+
+/*define cards*/
+
+.purchaseitems{
+	font-family: 'Rokkitt';
+}
+.card {
+    padding: 20px;
+    background-color: none;
+    background: none;
+    border-color: #000;
+    border-style: solid;
+    border-radius: 2;
+}
+
+#myform{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right:0;
+	height:300px;
+	width:100%;
+	z-index:1000;
+}
+
+.mybtn{
+	background: none;
+	border-color: #000;
+    border-style: solid;
+    border-radius: 2;
+    color:#000;
+}
+
+/*@media(min-width: 1200px) {
+    .card-img-top {
+        max-width: 300px;
+    }
+}
+@media(max-width: 1200px) and (min-width: 992px){
+    .card-img-top {
+        max-width: 385px;
+    }
+}
+
+@media(max-width: 992px) and (min-width: 769px){
+    .card-img-top {
+        max-width: 625px;
+    }
+}
+
+@media(max-width: 769px) and (min-width: 400px){
+    .card-img-top {
+        max-width: 250px;
+    }
+}*/
