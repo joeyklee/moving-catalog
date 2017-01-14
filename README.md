@@ -1,4 +1,5 @@
 # Moving Catalog
+***your image names can't have spaces in them!***
 
 ## About
 We all move eventually. And when that time comes, you can show show your things to your friends and aquaintances with this hacky moving catalog. 
